@@ -32,7 +32,14 @@
             
             <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
             <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
-            <button class="btn-set-score" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-content='<form><input type="text" /></form>'><i class="ion-ios-gear-outline"></i>Set score</button>
+            <button class="btn-set-score" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" 
+            data-content='
+            <form id="score-form">
+                <lable id="nameLable" for="custom-score">Set a custom score:</lable>
+                <input id="custom-score" type="text"/>
+                <input id="submit-score" type="submit"/>
+            </form>'
+            ><i class="ion-ios-gear-outline"></i>Set score</button>
             <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
             
             <img src="dice-5.png" alt="Dice" class="dice0">
@@ -46,7 +53,7 @@
 
         <script>
             $(function () {
-                    $('[data-toggle="popover"]').popover()
+                $('[data-toggle="popover"]').popover()
             });
         </script>
     </body>
