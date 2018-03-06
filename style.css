@@ -1,12 +1,7 @@
-/**********************************************
-*** GENERAL
-**********************************************/
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 .clearfix::after {
@@ -44,12 +39,6 @@ body {
     height: 600px;
     padding: 100px;
 }
-
-
-
-/**********************************************
-*** PLAYERS
-**********************************************/
 
 .player-name {
     font-size: 40px;
@@ -99,9 +88,7 @@ body {
     color: #222;
 }
 
-.player-current-score {
-    font-size: 30px;
-}
+.player-current-score { font-size: 30px; }
 
 button {
     position: absolute;
@@ -121,10 +108,7 @@ button {
 
 button:hover { font-weight: 600; }
 button:hover i { margin-right: 20px; }
-
-button:focus {
-    outline: none;
-}
+button:focus { outline: none; }
 
 i {
     color: #EB4D4D;
@@ -139,27 +123,39 @@ i {
 
 .btn-new { top: 45px;}
 .btn-roll { top: 403px;}
-.btn-set-score { top: 78px;}
 .btn-hold { top: 467px;}
 
-
-.dice0 {
+.dice {
     position: absolute;
     left: 50%;
-    top: 146px;
+    top: 178px;
     transform: translateX(-50%);
     height: 100px;
     box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
 }
 
-.dice1 {
+#dice-1 { top: 120px; }
+#dice-2 { top: 250px; }
+
+.final-score {
     position: absolute;
     left: 50%;
-    top: 270px;
     transform: translateX(-50%);
-    height: 100px;
-    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+    top: 520px;
+    color: #555;
+    font-size: 18px;
+    font-family: 'Lato';
+    text-align: center;
+    padding: 10px;
+    width: 160px;
+    text-transform: uppercase;
 }
+
+.final-score:focus { outline: none; }
 
 .winner { background-color: #f7f7f7; }
-.winner .player-name { font-weight: 300; color: #EB4D4D; }
+
+.winner .player-name { 
+    font-weight: 300;
+    color: #EB4D4D;
+}
